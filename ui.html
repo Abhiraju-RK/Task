@@ -1,0 +1,138 @@
+,<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anaswara Jewellers Dashboard</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- Top Navigation -->
+    <header class="topbar">
+
+        <div class="brand">
+            <div class="brand-mark">✦</div>
+            <div>
+                <div class="brand-name">Anaswara</div>
+                <span class="brand-sub">JEWELLERS</span>
+            </div>
+        </div>
+
+        <div class="top-actions">
+            <input type="search"
+                   placeholder="Search scheme, customer">
+
+            <div class="gold-pill">
+                Gold Rate: ₹13,140 /g
+            </div>
+
+            <div class="profile">
+                <div class="avatar">A</div>
+                <strong>admin</strong>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="workspace">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <nav class="nav-list">
+                <button class="nav-link active">Dashboard</button>
+                <button class="nav-link">Customers</button>
+                <button class="nav-link">New Joinings</button>
+                <button class="nav-link">Payment Entries</button>
+                <button class="nav-link">Scheme Details</button>
+                <button class="nav-link">Gold Rate Report</button>
+                <button class="nav-link">User management</button>
+            </nav>
+
+            <button class="nav-link logout">Logout</button>
+
+        </aside>
+
+
+        <!-- Main Dashboard -->
+        <main class="main-content">
+
+            <section class="page-heading">
+                <div>
+                    <h1>Dashboard Overview</h1>
+                    <p>
+                        Friday, November 6, 2026 ·
+                        Welcome to Anaswara Scheme Management
+                    </p>
+                </div>
+
+                <div class="today-rate">
+                    Today's Gold: ₹13,140 / g
+                </div>
+            </section>
+
+
+            <!-- Statistics Cards -->
+            <section class="stats-grid">
+
+                <article class="stat-card green">
+                    <h4>Total Collections</h4>
+                    <h2>₹2,092,610</h2>
+                    <p>1,258 Payments processed</p>
+                </article>
+
+                <article class="stat-card blue">
+                    <h4>Customer Accounts</h4>
+                    <h2>1,817</h2>
+                    <p>32% enrolled (397 joined)</p>
+                </article>
+
+                <article class="stat-card red">
+                    <h4>Scheme Enrollments</h4>
+                    <h2>409</h2>
+                    <p>Total active saving plans</p>
+                </article>
+
+                <article class="stat-card gold">
+                    <h4>Gold Board Rate</h4>
+                    <h2>₹13,140</h2>
+                    <p>Per gram standard rate</p>
+                </article>
+
+            </section>
+
+
+            <!-- Graph Section -->
+            <section class="charts-grid">
+
+                <div class="chart-card">
+                    <h3>Gold Rate Price Trend</h3>
+                    <div class="chart-wrap">
+                        <canvas id="goldChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <h3>Customer Registrations</h3>
+                    <div class="chart-wrap">
+                        <canvas id="customerChart"></canvas>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
